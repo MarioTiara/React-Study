@@ -18,9 +18,10 @@ class App extends Component {
            <button>Action</button>
         </Greet>
         <Greet name="pratama" herroName="batman"/>
-        <Welcome name="mario" herroName="superman"/>
         <Welcome name="mario" herroName="superman"/> */}
         <Greet name="pratama" herroName="batman"/>
+        <Welcome name="mario" herroName="superman"/>
+      
       </div>
     );
   }
