@@ -4,7 +4,8 @@ import React  from "react";
 //     return <h1>hello mario</h1>
 // }
 
-const Greet =({name, herroName})=>{
+const Greet =props=>{
+  const {name, herroName}=props;
   return (
     <div>
         <h1>hello {name} a.k.a {herroName}</h1>
