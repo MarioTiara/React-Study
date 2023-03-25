@@ -9,6 +9,7 @@ class Counter extends Component {
       }
     }
     increase(){
+        // NOTE => this.setState is an async method so if you want to execute a code after this.setState is finished, you gotta use claback function
         this.setState({
             count:this.state.count+=1
         },()=> {
