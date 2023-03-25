@@ -11,6 +11,8 @@ class Counter extends Component {
     increase(){
         this.setState({
             count:this.state.count+=1
+        },()=> {
+            console.log('calback value: ', this.state.count);
         })
     }
   render() {
