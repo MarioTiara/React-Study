@@ -5,7 +5,13 @@ import React  from "react";
 // }
 
 const Greet =props=>{
-  return  <h1>hello {props.name}</h1>
+  return (
+    <div>
+        <h1>hello {props.name} a.k.a {props.herroName}</h1>
+        {props.children}
+    </div>
+    
+  ) 
 } 
 
 export default Greet

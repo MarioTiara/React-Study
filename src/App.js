@@ -8,9 +8,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Greet name="mario"/>
-        <Greet name="tiara"/>
-        <Greet name="pratama"/>
+        <Greet name="mario" herroName="superman">
+            <p>This is children props</p>
+        </Greet>
+        <Greet name="tiara" herroName="spiderman"/>
+        <Greet name="pratama" herroName="batman"/>
       </div>
     );
   }
