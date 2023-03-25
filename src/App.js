@@ -9,7 +9,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Counter></Counter>
+        {/* <Counter></Counter> */}
         {/* <Message/> */}
         {/* <Greet name="mario" herroName="superman">
             <p>This is children props</p>
@@ -20,6 +20,7 @@ class App extends Component {
         <Greet name="pratama" herroName="batman"/>
         <Welcome name="mario" herroName="superman"/>
         <Welcome name="mario" herroName="superman"/> */}
+        <Greet name="pratama" herroName="batman"/>
       </div>
     );
   }
