@@ -9,8 +9,8 @@ export class ParentComponent extends Component {
          parentName:'parent'
       }
     }
-    greetParent=()=>{
-        alert("hallo")
+    greetParent=(child)=>{
+        alert(`hello ${this.state.parentName} from ${child}`)
     }
   render() {
     return (
