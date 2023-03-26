@@ -15,34 +15,13 @@ import Stylesheet from './components/Stylesheet';
 import Inline from './components/Inline';
 import './appStyle.css'
 import styles from './appStyle.module.css'
+import Form from './components/Form';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className='error'>Error</h1>
-        <h1 className={styles.success}>Success</h1>
-        {/* <Inline/> */}
-        {/* <Stylesheet primary={true} /> */}
-        {/* <NameList/> */}
-        {/* <UserGreeting/> */}
-        {/* <FunctionClick/>
-        <ClassClick/> */}
-        {/* <EventBind/> */}
-        {/* <Counter></Counter> */}
-        {/* <Message/> */}
-        {/* <Greet name="mario" herroName="superman">
-            <p>This is children props</p>
-        </Greet>
-        <Greet name="tiara" herroName="spiderman">
-           <button>Action</button>
-        </Greet>
-        <Greet name="pratama" herroName="batman"/>
-        <Welcome name="mario" herroName="superman"/> */}
-        {/* <Greet name="pratama" herroName="batman"/>
-        <Welcome name="mario" herroName="superman"/> */}
-
-      
+       <Form/>
       </div>
     );
   }
