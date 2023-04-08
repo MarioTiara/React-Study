@@ -3,19 +3,27 @@ import React, { Component } from 'react'
  class RefsDemo extends Component {
     constructor(props) {
       super(props)
-      this.inputRef=React.createRef()
+      this.inputRef=React.createRef();
+      this.Cbref=null;
+      this.setCBref=(element)=>{
+        this.Cbref=element;
+      }
     }
     componentDidMount(){
-        this.inputRef.current.focus()
-        console.log(this.inputRef);
+        if (this.Cbref){
+            this.Cbref.focus();
+        }
+        // this.inputRef.current.focus()
+        // console.log(this.inputRef);
     }
     clickHandler=()=>{
-        alert(this.inputRef.current.value)
+        alert(this.Cbref.value);
     }
   render() {
     return (
       <div>
         <input type='text' ref={this.inputRef}/>
+        <input type='text' ref={this.setCBref}/>
         <button onClick={this.clickHandler}>Click</button>
       </div>
     )
